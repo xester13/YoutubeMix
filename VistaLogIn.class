@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class VistaLogIn {
+	class DadesEntrada{
+		String Nom;
+		String Password;
+	};
+	public DadesEntrada demanarDadesUsuari(){
+		DadesEntrada d;
+		d = new DadesEntrada();
+		Scanner llegir = new Scanner(System.in);
+		d.Nom = llegir.nextLine();
+		d.Password = llegir.nextLine();
+		llegir.close();
+		return d;
+	}
+
+}
